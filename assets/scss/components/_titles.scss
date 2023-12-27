@@ -1,0 +1,36 @@
+.title{
+    h1{
+        @include bayon();
+        border-bottom: 1px solid $dark;
+    }
+}
+
+.title_news{
+    text-align: center;
+}
+
+.footer_logo{
+    margin: 0 auto;
+    text-align: center;
+    font-size: $basefont + 50;
+    color: $light;
+    @include bayon();
+    span{
+        display: block;
+        font-size: $basefont;
+    }
+}
+.footer_titles{
+    margin:22px auto 0 auto;
+    text-align: center;
+    font-size: $basefont + 18;
+    color: $light;
+    @include bayon();
+}
+.footer_subtitle{
+    font-size: $basefont;
+    color: $light;
+    font-weight: bold;
+    width: 240px;
+    margin: 0 auto;
+}

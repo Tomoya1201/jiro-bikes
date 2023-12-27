@@ -1,0 +1,21 @@
+//color
+$light:#fff;
+$white:#F9F9F9;
+$dark:#23292F;
+$border:#EBEBEB;
+$green:#8CFFD6;
+$reddy:#EC5C5C;
+$transparent: rgba(#fff, 0.3);
+
+//font
+$basefont:14px;
+ 
+//responsible
+$smartphone: "only screen and (max-width: 767px)";
+$desktop: "only screen and (min-width: 768px)";
+$middle: "only screen and (min-width: 768px) and (max-width: 1169px)"; // 1020 + 150
+$small: "only screen and (min-width: 768px) and (max-width: 991px)";
+$sm: "only screen and (min-width: 576px)";
+$md: "only screen and (min-width: 768px)";
+$lg: "only screen and (min-width: 992px)";
+$xl: "only screen and (min-width: 1200px)";

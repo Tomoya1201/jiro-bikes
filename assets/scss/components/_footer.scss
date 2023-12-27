@@ -1,0 +1,94 @@
+.footercontainer{
+    position: relative;
+    height: 1080px;
+    width: 100%;
+    background-image:url("/wp-content/themes/jiro-bikes/assets/img/common/Footerbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .footbox{
+        padding:300px 100px 0 100px;
+        @include flex(row, space-between, start);
+        &__left{
+            width: 32%;
+            .footer_sns{
+                margin-top:30px;
+                display: grid;
+                grid-template-columns:repeat(3, 40px);
+                gap:10px;
+                justify-content: center;
+                a{
+                    display: block;
+                    margin:0 auto;
+                    i{
+                        display: block;
+                        padding: 10px;
+                        font-size: $basefont;
+                        background: $light;
+                        width: 34px;
+                        height: 34px;
+                        color:$dark;
+                        text-align: center;
+                        border-radius: 6px;
+                        transform:translateY(0);
+                        @include animation(200ms);
+                        &:hover{
+                            background: $green;
+                            transform:translateY(2px);
+                        }
+                    }
+                }
+            }
+        }
+        &__center{
+            width: 32%;
+        }
+        &__right{
+            width: 32%;
+        }
+        // クラス　リスト　一般
+        .list{
+            &:nth-child(3){
+                margin-left:15px;
+            }
+            @include flex(row, center, start);
+            ul{
+                width:200px;
+                list-style:upper-roman;
+                color:$light;
+                li{
+                    a{
+                        display: block;
+                        padding:2px;
+                        color: $light;
+                        font-size: $basefont - 2;
+                        transform:translateX(0);
+                        @include animation(100ms);
+                        &:hover{
+                            transform:translateX(2px);
+                            color:darken($color: $border, $amount: 10%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cprights{
+        position:absolute;
+        height: 50px;
+        bottom:0;
+        left:100px;
+        @include flex(row, start, center);
+        small{
+            color:$light;
+            font-size: $basefont - 2;
+        }
+        span{
+            margin-left: 50px;
+            a{
+                display: block;
+                color:$light;
+                font-size: $basefont - 2;
+            }
+        }
+    }
+}

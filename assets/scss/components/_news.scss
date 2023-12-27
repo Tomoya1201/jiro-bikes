@@ -1,0 +1,101 @@
+.news_inner{
+    background-color: $border;
+    .event_wrapper{
+        margin:50px auto;
+        ul{
+            @include flex(row, space-between, start);
+            li{
+                @include flex(column, center, start);
+                img{
+                    border: 1px solid $dark;
+                }
+                .eventbox{
+                    width: 100%;
+                    border-bottom:1px solid $dark;
+                    border-right: 1px solid $dark;
+                    border-left: 1px solid $dark;
+                    @include flex(row, start, start);
+                    .eventcat{
+                        padding:15px 50px;
+                        color:$light;
+                        background-color: $dark;
+                        font-size: $basefont;
+                        border-bottom:1px solid $dark;
+                    }
+                    .eventcont{
+                        a{
+                            display: block;
+                            text-align: center;
+                            padding:15px;
+                            color: $dark;
+                            font-size: $basefont;
+                            p{
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .news_wrapper{
+        padding:0 100px;
+        @include flex(row, space-between, start);
+        margin-bottom: 10px;
+        &:last-child{
+            margin-bottom:0;
+        }
+        .news-time{
+            font-size: $basefont;
+            font-weight:lighter ;
+            margin-right: 15px;
+        }
+        .newsbox{
+            &__cat{
+                a{
+                    position:relative;
+                    font-size:$basefont;
+                    padding:8px 20px;
+                    color: $dark;
+                    z-index:1;
+                    &:before{
+                        content:"";
+                        position: absolute;
+                        top:0;
+                        bottom:0;
+                        left:0;
+                        right:0;
+                        background-color: $green;
+                        transform:skewX(-15deg);
+                        z-index:-1;
+                    }
+                }
+            }
+            &__content{
+                ul{
+                    li{
+                        dl{
+                            dt{
+                                a{
+                                    display: block;
+                                    padding:8px 0;
+                                    font-size: $basefont + 2;
+                                    font-weight:bold;
+                                    color:$dark;
+                                }
+                            }
+                            dd{
+                                font-size: $basefont;
+                                p{
+                                    a{
+                                        color:$dark;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

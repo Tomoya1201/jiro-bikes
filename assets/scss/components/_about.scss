@@ -1,0 +1,38 @@
+.about-wrap{
+    margin-top: 50px;
+    height:600px;
+    @include flex(row, center, start);
+    &__pic{
+        position: relative;
+        margin-top: -25px;
+        left:1.5%;
+        width: 100%;
+        height:600px;
+        background-image: url('/wp-content/themes/jiro-bikes/assets/img/about/About_01.png');
+        background-size:cover;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    &__content{
+            position: relative;
+            right:1.5%;
+            width: 100%;
+            height:600px;
+            background-image: url('/wp-content/themes/jiro-bikes/assets/img/about/About_02.png');
+            background-size:cover;
+            background-repeat: no-repeat;
+            @include flex(column, center, center);
+            dl{
+                width: 80%;
+                dt{
+                    text-align: center;
+                    font-size: $basefont + 18;
+                    @include bayon();
+                }
+                dd{
+                    font-size: $basefont - 2;
+                    word-break: break-all;
+                }
+            }
+        }
+}

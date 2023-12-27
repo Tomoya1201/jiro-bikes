@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&display=swap');
+@import "_module";
+@import "editor_basestyle";
+
+/** DEPENDENCES */
+@import "dependence/_mixin";
+@import "dependence/_reset";
+
+/** COMPONENTS */
+@import "components/_breadcrumb";
+@import "components/_footer";
+@import "components/_header"; 
+@import "components/_hero";
+@import "components/_shop";
+@import "components/_news";
+@import "components/_about";
+/** COMPONENTS RULES */
+@import "components/_titles";
+@import "components/_buttons";
+@import "components/_slick";
